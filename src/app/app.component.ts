@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatButtonModule, MatCardModule],
+  imports: [TodoListComponent, HttpClientModule],
   template: `
-
+    <app-todo-list></app-todo-list>
   `
 })
-export class AppComponent {
-  title = 'todo-sample';
-}
+export class AppComponent {}
