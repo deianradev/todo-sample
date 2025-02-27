@@ -213,6 +213,15 @@ import { trigger, transition, style, animate } from '@angular/animations';
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="app-header">
         <h1 class="app-title">My Tasks</h1>
+        <p class="text-white/80 text-sm mt-2">
+          A demonstration of CRUD operations using the 
+          <a href="https://dummyjson.com" 
+             target="_blank" 
+             class="text-white font-medium hover:text-white underline decoration-white/50 hover:decoration-white transition-all">
+            DummyJSON
+          </a> 
+          Todos API. Built with Angular Material for a modern, responsive interface.
+        </p>
       </div>
 
       <mat-card class="main-card">
